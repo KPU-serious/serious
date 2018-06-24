@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.saintdev.project0402">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".models.components.kakao.GlobalApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".views.activitys.AuthActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".views.activitys.MainActivity"
+            android:enabled="true" />
+
+        <activity android:name=".views.activitys.SocialLoginActivity"
+            android:enabled="true" />
+
+        <activity android:name=".views.activitys.AddVoiceCommandActivity"
+            android:enabled="true" />
+
+        <activity android:name=".views.activitys.ListCommandActivity"
+            android:enabled="true" />
+
+        <activity android:name=".views.activitys.LinkVoiceCommandActivity"
+            android:enabled="true" />
+
+        <activity android:name=".views.activitys.CommandPlayActivity"
+            android:enabled="true" />
+
+        <!-- V2 Activitys 05 26 -->
+        <activity android:name=".views.activitys.AddCommandActivity"
+            android:enabled="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".views.activitys.ShowCommandActivity"
+            android:enabled="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data android:name="com.kakao.sdk.AppKey"
+            android:value="287b2db3fccf3b00205e17fdbfc41cf7" />
+    </application>
+
+
+
+</manifest>
